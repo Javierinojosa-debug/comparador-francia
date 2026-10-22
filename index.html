@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+
+  <title>Compara Luz y Gas · Ahorra en tu factura de luz y gas</title>
+  <meta name="description" content="Te ayudamos a encontrar la mejor tarifa de luz y gas. Llámanos sin compromiso.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Compara Luz y Gas · Ahorra en tu factura">
+  <meta property="og:description" content="Asesoramiento gratuito en tarifas de luz y gas. Sin compromiso.">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://comparaluzygas.es">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Compara Luz y Gas",
+    "description": "Sitio publicitario de asesoramiento gratuito en tarifas de luz y gas.",
+    "url": "https://comparaluzygas.es"
+  }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W953MGGM');</script>
+  <!-- End Google Tag Manager -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    :root {
+      --navy:    #1B5FA8;
+      --navy-dk: #0D3E72;
+      --white:   #FFFFFF;
+      --bg:      #F4F6F8;
+      --cta:     #F59E0B;
+      --cta-dk:  #D97706;
+      --text:    #1a2535;
+      --muted:   #5a6a7e;
+      --border:  #dde3eb;
+      --green:   #10B981;
+      --radius:  10px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--white);
+      padding-bottom: 80px;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img, svg { display: block; }
+
+    .container { width: 100%; max-width: 680px; margin: 0 auto; padding: 0 20px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+
+    .divider {
+      border: none; height: 1px; margin: 0;
+      background: linear-gradient(to right, transparent 0%, var(--div-color, #1B5FA8) 50%, transparent 100%);
+      opacity: 0.35;
+    }
+    .divider--light  { --div-color: #1B5FA8; opacity: 0.25; }
+    .divider--onblue { --div-color: #FFFFFF; opacity: 0.30; }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: var(--navy-dk); padding: 14px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,.3);
+    }
+
+    .logo { display: flex; align-items: center; gap: 10px; color: var(--white); }
+    .logo-text { font-size: 1.1rem; font-weight: 700; letter-spacing: -.3px; line-height: 1.15; }
+    .logo-text span { color: var(--cta); }
+
+    .header-phone {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--cta); color: var(--navy-dk);
+      font-weight: 800; font-size: .95rem;
+      padding: 10px 16px; border-radius: var(--radius);
+      white-space: nowrap; transition: background .15s;
+    }
+    .header-phone:hover { background: var(--cta-dk); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, var(--navy-dk) 0%, var(--navy) 100%);
+      color: var(--white); padding: 24px 20px 28px; text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(245,158,11,.18); border: 1px solid rgba(245,158,11,.45);
+      color: var(--cta); font-size: .8rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .06em;
+      padding: 5px 12px; border-radius: 20px; margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.65rem, 5vw, 2.4rem); font-weight: 800;
+      line-height: 1.18; margin-bottom: 14px; letter-spacing: -.02em;
+    }
+    .hero h1 em { font-style: normal; color: var(--cta); }
+
+    .hero-bullets {
+      list-style: none; margin: 0 auto 32px; max-width: 420px; text-align: left;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .hero-bullets li {
+      display: flex; align-items: center; gap: 10px;
+      font-size: .97rem; color: rgba(255,255,255,.88);
+    }
+    .hero-bullets li::before {
+      content: ''; flex-shrink: 0; width: 7px; height: 7px;
+      background: var(--cta); border-radius: 50%;
+    }
+
+    /* ── BRANDS CAROUSEL ── */
+    .brands { background: var(--white); padding: 20px 0; overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .brands-track { display: flex; gap: 16px; animation: marquee 22s linear infinite; width: max-content; }
+    .brands:hover .brands-track { animation-play-state: paused; }
+    .brand-item { display: flex; align-items: center; justify-content: center; padding: 8px 24px; background: var(--white); }
+    .brand-item img { height: 36px; width: auto; object-fit: contain; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    .cta-primary {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      background: var(--cta); color: var(--navy-dk);
+      font-size: 1.25rem; font-weight: 900;
+      padding: 18px 28px; border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(245,158,11,.45);
+      margin: 0 auto 14px; max-width: 420px;
+      transition: transform .12s, box-shadow .12s;
+    }
+    .cta-primary:active { transform: scale(.97); }
+    .cta-primary:hover  { box-shadow: 0 8px 28px rgba(245,158,11,.55); }
+    .cta-primary svg    { flex-shrink: 0; }
+
+    .hero-trust {
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      font-size: .82rem; color: rgba(255,255,255,.65);
+    }
+
+
+    .section-label {
+      text-align: center; font-size: .72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: var(--navy); margin-bottom: 6px;
+    }
+    .section-title {
+      text-align: center; font-size: clamp(1.2rem,4vw,1.6rem);
+      font-weight: 800; color: var(--navy-dk);
+      margin-bottom: 24px; letter-spacing: -.02em;
+    }
+
+    /* ── HOW ── */
+    .how { background: var(--bg); padding: 40px 20px; }
+    .steps { display: flex; flex-direction: column; max-width: 480px; margin: 0 auto; }
+    .step { display: flex; gap: 16px; padding-bottom: 28px; position: relative; }
+    .step:not(:last-child)::after {
+      content:''; position:absolute; left:18px; top:38px; bottom:0;
+      width:2px; background:var(--border);
+    }
+    .step-num {
+      flex-shrink:0; width:36px; height:36px; border-radius:50%;
+      background:var(--navy); color:var(--white);
+      font-weight:800; font-size:.85rem;
+      display:flex; align-items:center; justify-content:center;
+      position:relative; z-index:1;
+    }
+    .step-body h3 { font-size:.97rem; font-weight:700; color:var(--navy-dk); margin-bottom:4px; }
+    .step-body p  { font-size:.85rem; color:var(--muted); line-height:1.6; }
+
+    /* ── SERVICES ── */
+    .services { background: var(--white); padding: 40px 20px; }
+    .services-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+      max-width: 540px; margin: 0 auto;
+    }
+    .service-card {
+      background: var(--bg); border: 1.5px solid var(--border);
+      border-radius: var(--radius); padding: 18px 14px; text-align: center;
+    }
+    .service-icon { font-size: 2rem; margin-bottom: 8px; line-height: 1; }
+    .service-card h3 { font-size:.92rem; font-weight:700; color:var(--navy); margin-bottom:4px; }
+    .service-card p  { font-size:.78rem; color:var(--muted); }
+
+    /* ── TRUST ── */
+    .trust { background: var(--bg); padding: 40px 20px; }
+    .trust-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+      max-width: 540px; margin: 0 auto;
+    }
+    .trust-item {
+      display:flex; align-items:flex-start; gap:10px;
+      background:var(--white); border-radius:var(--radius);
+      padding:14px; border:1px solid var(--border);
+    }
+    .trust-check {
+      flex-shrink:0; width:22px; height:22px; background:var(--green);
+      border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:1px;
+    }
+    .trust-item p { font-size:.82rem; color:var(--text); font-weight:500; }
+
+    /* ── CTA BAND ── */
+    .cta-band { background: var(--navy); color: var(--white); padding: 40px 20px; text-align: center; }
+    .cta-band h2 { font-size:clamp(1.3rem,4vw,1.8rem); font-weight:800; margin-bottom:8px; letter-spacing:-.02em; }
+    .cta-band > .container > p { color:rgba(255,255,255,.75); font-size:.95rem; margin-bottom:24px; }
+
+    /* ── FAQ ── */
+    .faq { background: var(--white); padding: 40px 20px; }
+    .faq-list {
+      max-width:560px; margin:0 auto;
+      border:1.5px solid var(--border); border-radius:var(--radius); overflow:hidden;
+    }
+    .faq-item { border-bottom:1px solid var(--border); }
+    .faq-item:last-child { border-bottom:none; }
+    .faq-question {
+      width:100%; background:none; border:none; padding:16px 18px;
+      text-align:left; font-size:.9rem; font-weight:700; color:var(--navy-dk);
+      display:flex; justify-content:space-between; align-items:center; gap:12px; cursor:pointer;
+    }
+    .faq-question:focus-visible { outline:2px solid var(--cta); outline-offset:-2px; }
+    .faq-icon { flex-shrink:0; width:20px; height:20px; transition:transform .2s; }
+    .faq-item.open .faq-icon { transform:rotate(45deg); }
+    .faq-answer { display:none; padding:0 18px 16px; font-size:.85rem; color:var(--muted); line-height:1.6; }
+    .faq-item.open .faq-answer { display:block; }
+
+    /* ── ABOUT ── */
+    .about { background:var(--bg); padding:36px 20px; text-align:center; }
+    .about p { font-size:.9rem; color:var(--muted); max-width:520px; margin:0 auto 14px; }
+
+    /* ── FOOTER ── */
+    .site-footer { background:var(--navy-dk); color:rgba(255,255,255,.55); padding:32px 20px; font-size:.78rem; line-height:1.7; }
+    .footer-inner { max-width:680px; margin:0 auto; }
+    .footer-logo { color:var(--white); font-weight:700; font-size:1rem; margin-bottom:14px; }
+    .footer-logo span { color:var(--cta); }
+    .footer-links { display:flex; flex-wrap:wrap; gap:4px 16px; margin-bottom:16px; }
+    .footer-links a { color:rgba(255,255,255,.6); text-decoration:underline; text-underline-offset:3px; }
+    .footer-links a:hover { color:var(--white); }
+    .footer-legal { margin-top:14px; border-top:1px solid rgba(255,255,255,.1); padding-top:14px; }
+
+    /* ── STICKY MOBILE CTA ── */
+    .sticky-cta {
+      position:fixed; bottom:0; left:0; right:0;
+      background:var(--cta); padding:14px 20px;
+      display:flex; align-items:center; justify-content:center;
+      z-index:200; box-shadow:0 -4px 20px rgba(0,0,0,.2);
+    }
+    .sticky-cta a {
+      display:flex; align-items:center; gap:10px; color:var(--navy-dk);
+      font-size:1.1rem; font-weight:900; width:100%; justify-content:center;
+    }
+    .sticky-sub { font-size:.72rem; font-weight:600; color:rgba(0,62,114,.65); display:block; text-align:center; margin-top:2px; }
+
+    @media (min-width:640px) {
+      .sticky-cta { display:none; }
+      body { padding-bottom:0; }
+      .trust-grid { grid-template-columns:1fr 1fr 1fr; }
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .dot-live { animation:none; }
+      .cta-primary, .header-phone { transition:none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W953MGGM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ══ HEADER ══ -->
+<header class="site-header" role="banner">
+  <a href="/" class="logo" aria-label="Compara Luz y Gas · Inicio">
+    <!-- [LOGO] Reemplaza este bloque con tu logo final.
+         Opción rápida: <img src="/logo.svg" alt="Compara Luz y Gas" height="36"> -->
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+      <rect width="32" height="32" rx="8" fill="#F59E0B"/>
+      <path d="M16 5L10 16h5v6l6-11h-5V5z" fill="#0D3E72"/>
+    </svg>
+    <span class="logo-text">Compara<br><span>Luz y Gas</span></span>
+  </a>
+  <a href="tel:+34910769613" class="header-phone" aria-label="Llamar ahora al 910 769 613">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+    910 769 613
+  </a>
+</header>
+
+<!-- ══ HERO ══ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+<h1 id="hero-title">Teléfono <em>gratuito</em> para gestionar tu factura de luz y gas</h1>
+    <ul class="hero-bullets">
+      <li>Gestiones sobre tu factura de luz y gas</li>
+      <li>Altas y nuevas contrataciones</li>
+      <li>Cambio de titular o cuenta bancaria</li>
+      <li>Cambios de potencia</li>
+      <li>Otras gestiones y dudas</li>
+    </ul>
+    <a href="tel:+34910769613" class="cta-primary" aria-label="Llamar ahora al 910 769 613">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      910 769 613
+    </a>
+    <p class="hero-trust">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Sin compromiso · Asesoramiento gratuito
+    </p>
+  </div>
+</section>
+
+<hr class="divider divider--onblue" aria-hidden="true">
+
+<!-- ══ CARRUSEL COMPAÑÍAS ══ -->
+<div class="brands" aria-hidden="true">
+  <div class="brands-track">
+    <span class="brand-item"><img src="/images/endesa.jpg" alt="Endesa"></span>
+    <span class="brand-item"><img src="/images/repsol.png" alt="Repsol"></span>
+    <span class="brand-item"><img src="/images/totalenergies.jpg" alt="TotalEnergies"></span>
+    <span class="brand-item"><img src="/images/naturgy.png" alt="Naturgy"></span>
+    <span class="brand-item"><img src="/images/iberdrola.jpg" alt="Iberdrola"></span>
+    <span class="brand-item"><img src="/images/pepeenergy.jpeg" alt="Pepe Energy"></span>
+    <span class="brand-item"><img src="/images/Octopus_Energy_Logo.png" alt="Octopus Energy"></span>
+    <span class="brand-item"><img src="/images/plenitude.png" alt="Plenitude"></span>
+    <span class="brand-item"><img src="/images/endesa.jpg" alt="Endesa"></span>
+    <span class="brand-item"><img src="/images/repsol.png" alt="Repsol"></span>
+    <span class="brand-item"><img src="/images/totalenergies.jpg" alt="TotalEnergies"></span>
+    <span class="brand-item"><img src="/images/naturgy.png" alt="Naturgy"></span>
+    <span class="brand-item"><img src="/images/iberdrola.jpg" alt="Iberdrola"></span>
+    <span class="brand-item"><img src="/images/pepeenergy.jpeg" alt="Pepe Energy"></span>
+    <span class="brand-item"><img src="/images/Octopus_Energy_Logo.png" alt="Octopus Energy"></span>
+    <span class="brand-item"><img src="/images/plenitude.png" alt="Plenitude"></span>
+  </div>
+</div>
+
+<!-- ══ CÓMO FUNCIONA ══ -->
+<section class="how" aria-labelledby="how-title">
+  <div class="container">
+    <p class="section-label">El proceso</p>
+    <h2 id="how-title" class="section-title">Así de sencillo</h2>
+    <ol class="steps" aria-label="Pasos del proceso">
+      <li class="step">
+        <span class="step-num" aria-hidden="true">1</span>
+        <div class="step-body">
+          <h3>Nos llamas</h3>
+          <p>Sin esperas ni contestadores. Al otro lado encontrarás <strong>un asesor real que te atenderá personalmente.</strong></p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <div class="step-body">
+          <h3>Revisamos tu situación</h3>
+          <p>Miramos contigo lo que tienes contratado ahora mismo y entendemos qué es lo que más te importa: precio, estabilidad, servicio...</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">3</span>
+        <div class="step-body">
+          <h3>Te presentamos opciones</h3>
+          <p>Sin presión. Te explicamos qué tarifas existen y cuánto podrías ahorrar con cada una.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">4</span>
+        <div class="step-body">
+          <h3>Tú decides</h3>
+          <p><strong>Sin compromiso.</strong> Si alguna opción te convence, te acompañamos en el cambio. Y si decides quedarte como estás, también está bien. No hay ninguna obligación.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<hr class="divider divider--light" aria-hidden="true">
+
+<!-- ══ SERVICIOS ══ -->
+<section class="services" aria-labelledby="services-title">
+  <div class="container">
+    <p class="section-label">Te ayudamos con</p>
+    <h2 id="services-title" class="section-title">Comparamos tus tarifas de luz y gas</h2>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">⚡</div>
+        <h3>Luz</h3>
+        <p>Tarifas de electricidad adaptadas a tu consumo</p>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">🔥</div>
+        <h3>Gas</h3>
+        <p>Ahorra en tu factura de gas natural</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="divider divider--light" aria-hidden="true">
+
+<!-- ══ CONFIANZA ══ -->
+<section class="trust" aria-labelledby="trust-title">
+  <div class="container">
+    <p class="section-label">Por qué llamarnos</p>
+    <h2 id="trust-title" class="section-title">Consejo imparcial, sin ataduras</h2>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="trust-check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2.2"><polyline points="2,6 5,9 10,3"/></svg></span>
+        <p>Asesoramiento completamente gratuito</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2.2"><polyline points="2,6 5,9 10,3"/></svg></span>
+        <p>Sin permanencia ni contratos ocultos</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2.2"><polyline points="2,6 5,9 10,3"/></svg></span>
+        <p>Siempre hablarás con una persona real, no con una máquina</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2.2"><polyline points="2,6 5,9 10,3"/></svg></span>
+        <p>Comparamos varias compañías, no solo una</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2.2"><polyline points="2,6 5,9 10,3"/></svg></span>
+        <p>Tus datos protegidos según el Reglamento General de Protección de Datos</p>
+      </div>
+      <div class="trust-item">
+        <span class="trust-check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2.2"><polyline points="2,6 5,9 10,3"/></svg></span>
+        <p>Disponibles de lunes a viernes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider divider--light" aria-hidden="true">
+
+<!-- ══ CTA BAND ══ -->
+<section class="cta-band" aria-labelledby="cta-band-title">
+  <div class="container">
+    <h2 id="cta-band-title">¿Listo para ahorrar?</h2>
+    <p>Un asesor real te atiende sin compromiso.</p>
+    <a href="tel:+34910769613" class="cta-primary" aria-label="Llamar ahora al 910 769 613">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      910 769 613
+    </a>
+  </div>
+</section>
+
+<hr class="divider divider--onblue" aria-hidden="true">
+
+<!-- ══ FAQ ══ -->
+<section class="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <p class="section-label">Preguntas frecuentes</p>
+    <h2 id="faq-title" class="section-title">Resolvemos tus dudas</h2>
+    <div class="faq-list" role="list">
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+          ¿El asesoramiento es realmente gratuito?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer" id="faq-1" role="region">Sí, el asesoramiento es completamente gratuito. No pagarás nada por la consulta. El servicio se financia a través de acuerdos con las comercializadoras, pero la orientación siempre busca el mayor beneficio para ti.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+          ¿Estoy obligado a contratar algo?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer" id="faq-2" role="region">No. La llamada no implica ningún compromiso. Si tras la conversación no te interesa ninguna opción, puedes colgar y listo. No recibirás llamadas ni comunicaciones no solicitadas.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+          ¿Qué necesito tener a mano para la llamada?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer" id="faq-3" role="region">Si puedes tener tu última factura de luz o gas a mano, la conversación será más útil. Pero no es imprescindible: pueden orientarte igualmente con los datos que tengas disponibles.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+          ¿Qué ocurre con mis datos personales?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer" id="faq-4" role="region">Este sitio web no recoge datos personales mediante formularios. Al llamar al número indicado, la llamada es atendida directamente por la entidad anunciante, que es la responsable del tratamiento de los datos facilitados durante la conversación. La web solo utiliza cookies de analítica y seguimiento, sobre las que puedes consultar nuestra <a href="/politica-cookies" style="color:var(--navy);text-decoration:underline;">política de cookies</a>.</div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+          ¿Pueden revisar la luz y el gas en la misma llamada?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer" id="faq-5" role="region">Sí. En una misma llamada pueden revisar tanto tu tarifa de luz como la de gas y buscarte la combinación más eficiente para tu hogar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider divider--light" aria-hidden="true">
+
+<!-- ══ SOBRE ESTE SITIO ══ -->
+<section class="about" aria-labelledby="about-title">
+  <div class="container">
+    <p class="section-label">Sobre este sitio</p>
+    <h2 id="about-title" class="section-title">Información del servicio</h2>
+    <p>Este es un sitio web publicitario de asesoramiento en tarifas de energía. Al llamar al teléfono indicado, tu llamada será atendida directamente por un equipo de asesores especializados que te ayudarán a comparar y encontrar la tarifa de luz y gas más adecuada para ti.</p>
+    <p>El titular de este sitio web no interviene en las llamadas ni en la contratación de ningún servicio. Para más información, consulta nuestro <a href="/aviso-legal" style="color:var(--navy);text-decoration:underline;">aviso legal</a>.</p>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-logo">Compara <span>Luz y Gas</span></div>
+    <nav class="footer-links" aria-label="Páginas legales">
+      <a href="/aviso-legal">Aviso legal</a>
+      <a href="/politica-privacidad">Política de privacidad</a>
+      <a href="/politica-cookies">Política de cookies</a>
+    </nav>
+    <p>Teléfono: <a href="tel:+34910769613" style="color:var(--cta);">910 769 613</a></p>
+    <div class="footer-legal">
+      <p>Este sitio web tiene carácter informativo y publicitario. Las llamadas son atendidas directamente por la entidad anunciante. Compara Luz y Gas no garantiza el resultado de ningún cambio de tarifa. Las condiciones de las tarifas son orientativas y pueden variar según la comercializadora.</p>
+      <p style="margin-top:8px;">© <span id="year"></span> Compara Luz y Gas. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ STICKY MOBILE CTA ══ -->
+<div class="sticky-cta" role="complementary" aria-label="Llamar ahora">
+  <a href="tel:+34910769613" aria-label="Llamar ahora al 910 769 613">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+    910 769 613
+  </a>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Personalización del H1 via parámetro URL ?h1=Texto&em=palabra
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var titulo = params.get('h1');
+    var destacado = params.get('em');
+    if (titulo) {
+      var h1 = document.getElementById('hero-title');
+      var i = destacado ? titulo.indexOf(destacado) : -1;
+      h1.textContent = '';
+      if (i > -1) {
+        // Se construye con nodos de texto: nunca se interpreta HTML del parámetro
+        var em = document.createElement('em');
+        em.textContent = destacado;
+        h1.append(titulo.slice(0, i), em, titulo.slice(i + destacado.length));
+      } else {
+        h1.textContent = titulo;
+      }
+    }
+  })();
+
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

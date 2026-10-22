@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    { "source": "/aviso-legal", "destination": "/aviso-legal.html" },
+    { "source": "/politica-privacidad", "destination": "/politica-privacidad.html" },
+    { "source": "/politica-cookies", "destination": "/politica-cookies.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "no-referrer" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    }
+  ]
+}
