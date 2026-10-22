@@ -1,5 +1,5 @@
 {
-  "name": "comprador-francia",
+  "name": "comparador-francia",
   "private": true,
   "scripts": {
     "dev": "vite",
