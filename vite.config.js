@@ -6,9 +6,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        'aviso-legal': resolve(__dirname, 'aviso-legal.html'),
-        'politica-privacidad': resolve(__dirname, 'politica-privacidad.html'),
-        'politica-cookies': resolve(__dirname, 'politica-cookies.html'),
+        'mentions-legales': resolve(__dirname, 'mentions-legales.html'),
+        'politique-de-confidentialite': resolve(__dirname, 'politique-de-confidentialite.html'),
+        'politique-cookies': resolve(__dirname, 'politique-cookies.html'),
       }
     }
   }
