@@ -35,7 +35,7 @@ grep -rl --include=*.html 'XX' . | xargs sed -i \
 
 ## Configuración fuera del código (CNIL)
 
-- **Cookiebot**: dar de alta el dominio, banner en francés con botón «Tout refuser» al mismo nivel que «Tout accepter» y renovación del consentimiento a **6 meses**.
+- **Consentiam** (CMP del GTM): dar de alta el dominio, banner en francés con botón «Tout refuser» al mismo nivel que «Tout accepter» y renovación del consentimiento a **6 meses**.
 - **GA4**: la CNIL limita las cookies de audiencia a **13 meses**; ajustar la caducidad de cookies (por defecto 2 años) a 13 meses.
 
 ## Personalización del H1
