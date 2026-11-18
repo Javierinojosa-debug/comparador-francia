@@ -11,6 +11,17 @@ HTML estático + Vite, publicada en **Netlify**.
 
 Las páginas legales se sirven sin `.html` (`/mentions-legales`, `/politique-de-confidentialite`, `/politique-cookies`); Netlify lo hace por defecto.
 
+## Teléfonos (hoja de Selectra)
+Número por defecto: grupo **12537**. Para otro grupo, añade `?n=<id>` a la URL final del anuncio:
+
+| `?n=` | Lead source Zoho | Número |
+|---|---|---|
+| `12537` (defecto) | fr-ei-pa-javier12537 | 01 86 26 70 54 |
+| `12538` | fr-ei-pa-javier12538 | 01 86 26 71 93 |
+| `12539` | fr-ei-pa-javier12539 | 01 86 26 63 11 |
+
+Google Ads: cuenta **Selectra FR - EnergyLine (974-844-9509)**, etiqueta AW-18582746442, GTM-PXTRXV2G.
+
 ## Marcadores pendientes
 
 Sustituir en todos los `.html` antes de publicar:
