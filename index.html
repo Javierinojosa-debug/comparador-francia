@@ -130,13 +130,9 @@
       background: var(--cta); border-radius: 50%;
     }
 
-    /* ── BRANDS CAROUSEL ── */
-    .brands { background: var(--white); padding: 20px 0; overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .brands-track { display: flex; gap: 16px; animation: marquee 22s linear infinite; width: max-content; }
-    .brands:hover .brands-track { animation-play-state: paused; }
-    .brand-item { display: flex; align-items: center; justify-content: center; padding: 8px 24px; background: var(--white); }
-    .brand-item img { height: 36px; width: auto; object-fit: contain; }
-    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .providers { background: var(--white); padding: 22px 20px; text-align: center; border-bottom: 1px solid var(--border); }
+    .providers-label { font-size: .78rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 10px; }
+    .providers-note { font-size: .72rem; color: var(--muted); margin-top: 10px; }
 
     .cta-primary {
       display: flex; align-items: center; justify-content: center; gap: 12px;
@@ -332,23 +328,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <hr class="divider divider--onblue" aria-hidden="true">
 
-<!-- ══ CARRUSEL COMPAÑÍAS ══ -->
-<div class="brands" aria-hidden="true">
-  <div class="brands-track">
-    <span class="brand-item"><img src="/images/totalenergies.jpg" alt="TotalEnergies"></span>
-    <span class="brand-item"><img src="/images/Octopus_Energy_Logo.png" alt="Octopus Energy"></span>
-    <span class="brand-item"><img src="/images/plenitude.png" alt="Plenitude"></span>
-    <span class="brand-item"><img src="/images/iberdrola.jpg" alt="Iberdrola"></span>
-    <span class="brand-item"><img src="/images/totalenergies.jpg" alt="TotalEnergies"></span>
-    <span class="brand-item"><img src="/images/Octopus_Energy_Logo.png" alt="Octopus Energy"></span>
-    <span class="brand-item"><img src="/images/plenitude.png" alt="Plenitude"></span>
-    <span class="brand-item"><img src="/images/iberdrola.jpg" alt="Iberdrola"></span>
-    <span class="brand-item"><img src="/images/totalenergies.jpg" alt="TotalEnergies"></span>
-    <span class="brand-item"><img src="/images/Octopus_Energy_Logo.png" alt="Octopus Energy"></span>
-    <span class="brand-item"><img src="/images/plenitude.png" alt="Plenitude"></span>
-    <span class="brand-item"><img src="/images/iberdrola.jpg" alt="Iberdrola"></span>
-  </div>
-</div>
+<section class="providers" aria-label="Nous comparons les offres des principaux fournisseurs d'énergie">
+  <p class="providers-label">Nous comparons les offres des principaux fournisseurs d'énergie</p>
+  <p class="providers-note">Service indépendant : nous ne sommes le service client d'aucun fournisseur d'énergie.</p>
+</section>
 
 <!-- ══ CÓMO FUNCIONA ══ -->
 <section class="how" aria-labelledby="how-title">
