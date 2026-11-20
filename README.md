@@ -32,7 +32,6 @@ Sustituir en todos los `.html` antes de publicar:
 | `01 XX XX XX XX` | Teléfono visible | botones, cabecera y footer |
 | `votre-domaine.fr` | Dominio | `og:url`, JSON-LD, mentions légales |
 | ~~`GTM-XXXXXXX`~~ | Hecho: `GTM-PXTRXV2G` (contenedor energyline.fr) | — |
-| `+34 XXX XXX XXX` | Teléfono del editor (obligatorio por la LCEN) | `mentions-legales.html` |
 
 Sustitución rápida (ejemplo):
 
